@@ -1,12 +1,21 @@
 
-h4{font-weight: bold;}
-span{font-weight: bold;}
-p{font-size: 13px;}
+h4{
+    font-weight: bold;
+    color: #585c61;
+}
+span{
+    font-weight: bold;
+    color: #585c61;
+}
+p{
+    font-size: 11px;
+    color: gray;
+}
 
 body{
     display: flex;
     justify-content: left;
-    font-family: arial;
+    font-family: verdana;
 }
 
 .general_card{
@@ -16,11 +25,10 @@ body{
     position: relative;
     display: flex;
     border-radius: 1%;
+    box-shadow: 0 20px 50px rgba(0,0,0,.8);
 }
 
 @keyframes onhover {
-    from {display: block;}
-    to {display: none;}
 }
 
 .content_text1{
@@ -29,30 +37,44 @@ body{
     opacity: 70%;
     top: 50%;
     bottom: 0;          /*0em*/
-    width: 100%;
+    width: 95%;
     height: 70%;        /* default  ALLOWS TO TAKE THE REGULAR VALUE*/
     transition: 1s;
     transform: translateY(0px);
-
+    padding-left: 10px;
+    padding-right: 10px;
 }
+
 .content_text1:hover {
     transition:.5s;
     transform: translateY(-50px);
     animation: onhover 1s infinite;
    
 }
-
+button{
+    border-radius: 2px;
+    background-color: #c4d8f5;
+    border-color: transparent;
+    margin-right: 20px;
+    font-size: 10px;
+    font-family: verdana;
+    font-weight: bold;
+    color:#498ff5;
+}
 
 .content_text2{
     position: relative;
     background-color: white;
-    opacity: 70%;
+    opacity: 100%;
     bottom: -200px;          /*0em*/
-    width: 100%;
-    height: 70%;  /* default  ALLOWS TO TAKE THE REGULAR VALUE*/
+    width: 95%;
+    height: 95%;  /* default  ALLOWS TO TAKE THE REGULAR VALUE*/
     overflow: hidden;
     transform: translateY(-20px);
-    visibility:hidden;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    visibility:visible;
 }    
 .content_text2:hover {
     visibility: visible;
